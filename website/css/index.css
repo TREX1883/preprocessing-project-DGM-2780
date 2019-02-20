@@ -1,0 +1,120 @@
+/* body { */
+    /* max-width: 1200px; */
+/* } */
+
+main {
+    background-color: blanchedalmond;
+}
+
+header {
+    background-color: red;
+}
+
+h1 {
+    font-size: 35px;
+    color: white;
+    text-shadow: 4px 4px black;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4px 0px;
+}
+
+.top-menu li {
+    padding: 0px 9px 0px 9px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+nav {
+    background-color: red;
+}
+
+.nav-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.align-logo {
+    align-self: flex-start;
+}
+
+.nav-links {
+    display: flex;
+    color: white;
+}
+
+.nav-links a {
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    text-decoration: none;
+}
+
+/* main img {
+    max-height: 500px;
+} */
+
+.hero-image {
+    /* background-color: blue; */
+    /* max-height: 200px; */
+    max-width: 100%;
+    /* margin: 0 auto; */
+    /* background: url(../images/bookcase.jpg); */
+    /* background-size: cover; */
+}
+
+.button {
+    color: white;
+    text-align: center;
+    background-color: red;
+    height: 45px;
+    width: 130px;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 16px;
+    /* position: absolute; */
+    bottom: 12px;
+    /* right: 60px; */
+    border: 1px solid black;
+    box-shadow: 0 4px 4px 0 black;
+}
+
+.button:hover {
+    color: red;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 black;
+    transition: 0.8s;
+}
+
+.red-box {
+    position: absolute;
+    left: 15%;
+    /* background-color: rgba(255, 0, 0, 0.692); */
+    /* border: 1px solid black; */
+    top:25%;
+    height: 120px;
+    width: 250px;
+    /* padding: 40px 20px; */
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
