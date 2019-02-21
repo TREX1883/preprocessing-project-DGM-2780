@@ -1,13 +1,14 @@
-/* body { */
-    /* max-width: 1200px; */
-/* } */
-
-main {
+body {
     background-color: blanchedalmond;
 }
 
-header {
+header, nav, .nav-bar, footer {
     background-color: red;
+}
+
+section, .top-menu, .nav-bar, .footer-links, .copyright {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -19,31 +20,28 @@ h1 {
 .top-menu {
     display: flex;
     justify-content: flex-end;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 4px 0px;
 }
 
-.top-menu li {
+.top-menu a {
     padding: 0px 9px 0px 9px;
     color: white;
-}
-
-ul {
-    list-style-type: none;
-}
-  
-nav {
-    background-color: red;
+    text-decoration: none;
 }
 
 .nav-bar {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     height: 130px;
+}
+
+.link2:visited {
+    color: black;
+}
+
+.link:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 .logo {
@@ -67,17 +65,8 @@ nav {
     text-decoration: none;
 }
 
-/* main img {
-    max-height: 500px;
-} */
-
 .hero-image {
-    /* background-color: blue; */
-    /* max-height: 200px; */
     max-width: 100%;
-    /* margin: 0 auto; */
-    /* background: url(../images/bookcase.jpg); */
-    /* background-size: cover; */
 }
 
 .button {
@@ -89,9 +78,7 @@ nav {
     border-radius: 3px;
     padding: 8px;
     font-size: 16px;
-    /* position: absolute; */
     bottom: 12px;
-    /* right: 60px; */
     border: 1px solid black;
     box-shadow: 0 4px 4px 0 black;
 }
@@ -101,20 +88,86 @@ nav {
     background-color: white;
     box-shadow: 0 8px 16px 0 black;
     transition: 0.8s;
+    opacity: 0.7;
 }
 
 .red-box {
     position: absolute;
     left: 15%;
-    /* background-color: rgba(255, 0, 0, 0.692); */
-    /* border: 1px solid black; */
     top:25%;
     height: 120px;
     width: 250px;
-    /* padding: 40px 20px; */
 }
 
-section {
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+    display: flex;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo2 {
+    height: 120px;
+}
+
+.footer-logo {
+    align-self: center;
+}
+
+.footer-links2 {
+    color: white;
+    font-size: 18px;
+    padding: 25px 10px;
+}
+
+.footer-links2 a {
+    padding: 10px 5px 0px 5px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/social_medias.png);
+    background-position: 0 0;
+    list-style-type: none;
+}
+
+ul li.facebook {background-position: 0px 0;}
+ul li.google-plus {background-position: -100px 0;}
+ul li.instagram {background-position: -50px 0;}
+
+.copyright {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+@media(max-width: 925px) {
+.container {
+    flex-direction: column;
+}
+.event-list {
+    max-width: 100%;
+}
+.nav-bar {
+    flex-direction: column;
+}
+.nav-links a {
+    font-size: 14px;
+}
+.footer-links2 {
+    font-size: 14px;
+}
+.footer-links {
+    flex-direction: column;
+    align-items: center;
+}
 }
