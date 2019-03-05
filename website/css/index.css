@@ -1,173 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-    background-color: blanchedalmond;
+  line-height: 1;
 }
-
-header, nav, .nav-bar, footer {
-    background-color: red;
-}
-
-section, .top-menu, .nav-bar, .footer-links, .copyright {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 35px;
-    color: white;
-    text-shadow: 4px 4px black;
-}
-
-.top-menu {
-    display: flex;
-    justify-content: flex-end;
-    padding: 4px 0px;
-}
-
-.top-menu a {
-    padding: 0px 9px 0px 9px;
-    color: white;
-    text-decoration: none;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    height: 130px;
-}
-
-.link2:visited {
-    color: black;
-}
-
-.link:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-.logo {
-    height: 100px;
-}
-
-.align-logo {
-    align-self: flex-start;
-}
-
-.nav-links {
-    display: flex;
-    color: white;
-}
-
-.nav-links a {
-    padding: 0px 10px 0px 10px;
-    font-size: 20px;
-    color: white;
-    align-self: center;
-    text-decoration: none;
-}
-
-.hero-image {
-    max-width: 100%;
-}
-
-.button {
-    color: white;
-    text-align: center;
-    background-color: red;
-    height: 45px;
-    width: 130px;
-    border-radius: 3px;
-    padding: 8px;
-    font-size: 16px;
-    bottom: 12px;
-    border: 1px solid black;
-    box-shadow: 0 4px 4px 0 black;
-}
-
-.button:hover {
-    color: red;
-    background-color: white;
-    box-shadow: 0 8px 16px 0 black;
-    transition: 0.8s;
-    opacity: 0.7;
-}
-
-.red-box {
-    position: absolute;
-    left: 15%;
-    top:25%;
-    height: 120px;
-    width: 250px;
-}
-
-.container {
-    display: flex;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo2 {
-    height: 120px;
-}
-
-.footer-logo {
-    align-self: center;
-}
-
-.footer-links2 {
-    color: white;
-    font-size: 18px;
-    padding: 25px 10px;
-}
-
-.footer-links2 a {
-    padding: 10px 5px 0px 5px;
-}
-
+ol,
 ul {
-    display: flex;
+  list-style: none;
 }
-
-ul li {
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/social_medias.png);
-    background-position: 0 0;
-    list-style-type: none;
+blockquote,
+q {
+  quotes: none;
 }
-
-ul li.facebook {background-position: 0px 0;}
-ul li.google-plus {background-position: -100px 0;}
-ul li.instagram {background-position: -50px 0;}
-
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: blanchedalmond;
+}
+header,
+nav,
+.nav-bar,
+footer {
+  background-color: red;
+}
+section,
+.top-menu,
+.nav-bar,
+.footer-links,
 .copyright {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    background-color: black;
-    opacity: 0.7;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-@media(max-width: 925px) {
-.container {
-    flex-direction: column;
+h1 {
+  font-size: 35px;
+  color: white;
+  text-shadow: 4px 4px black;
 }
-.event-list {
-    max-width: 100%;
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 0px;
+}
+.top-menu a {
+  padding: 0px 9px 0px 9px;
+  color: white;
+  text-decoration: none;
 }
 .nav-bar {
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+}
+.link2:visited {
+  color: black;
+}
+.link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.logo {
+  height: 100px;
+}
+.align-logo {
+  align-self: flex-start;
+}
+.nav-links {
+  display: flex;
+  color: white;
 }
 .nav-links a {
-    font-size: 14px;
+  padding: 0px 10px 0px 10px;
+  font-size: 20px;
+  color: white;
+  align-self: center;
+  text-decoration: none;
 }
-.footer-links2 {
-    font-size: 14px;
+.hero-image {
+  max-width: 100%;
+}
+.button {
+  color: white;
+  text-align: center;
+  background-color: red;
+  height: 45px;
+  width: 130px;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 16px;
+  bottom: 12px;
+  border: 1px solid black;
+  box-shadow: 0 4px 4px 0 black;
+}
+.button:hover {
+  color: red;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 black;
+  transition: 0.8s;
+  opacity: 0.7;
+}
+.red-box {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  height: 120px;
+  width: 250px;
+}
+.container {
+  display: flex;
 }
 .footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+.logo2 {
+  height: 120px;
+}
+.footer-logo {
+  align-self: center;
+}
+.footer-links2 {
+  color: white;
+  font-size: 18px;
+  padding: 25px 10px;
+}
+.footer-links2 a {
+  padding: 10px 5px 0px 5px;
+}
+ul {
+  display: flex;
+}
+ul li {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/social_medias.png);
+  background-position: 0 0;
+  list-style-type: none;
+}
+ul li.facebook {
+  background-position: 0px 0;
+}
+ul li.google-plus {
+  background-position: -100px 0;
+}
+ul li.instagram {
+  background-position: -50px 0;
+}
+.copyright {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.7;
+}
+@media (max-width: 925px) {
+  .container {
+    flex-direction: column;
+  }
+  .event-list {
+    max-width: 100%;
+  }
+  .nav-bar {
+    flex-direction: column;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+  .footer-links2 {
+    font-size: 14px;
+  }
+  .footer-links {
     flex-direction: column;
     align-items: center;
-}
+  }
 }
