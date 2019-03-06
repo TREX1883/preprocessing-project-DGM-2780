@@ -134,74 +134,111 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  background-color: blanchedalmond;
-}
-header,
-nav,
-.nav-bar,
-footer {
-  background-color: red;
-}
-section,
-.top-menu,
-.nav-bar,
-.footer-links,
-.copyright {
+.pagewidth {
   max-width: 1200px;
   margin: 0 auto;
 }
-h1 {
-  font-size: 35px;
-  color: white;
-  text-shadow: 4px 4px black;
+.generalfont {
+  font-size: 14px;
 }
-.top-menu {
+.herofont {
+  font-size: 35px;
+}
+html {
+  font-family: Arial, 'sans-serif';
+}
+body {
+  background-color: blanchedalmond;
+}
+header {
+  background-color: #fa0808;
+  padding: 5px 2%;
+}
+header .top-menu {
   display: flex;
   justify-content: flex-end;
   padding: 4px 0px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.top-menu a {
+header .top-menu a {
   padding: 0px 9px 0px 9px;
-  color: white;
+  color: #f7f1f1;
   text-decoration: none;
 }
-.nav-bar {
+nav {
+  background-color: #fa0808;
+}
+nav .nav-bar {
   display: flex;
   justify-content: space-between;
   height: 130px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 2%;
 }
-.link2:visited {
-  color: black;
-}
-.link:hover {
+nav .nav-bar .link:hover {
   color: blue;
   text-decoration: underline;
 }
-.logo {
+nav .nav-bar .logo {
   height: 100px;
 }
-.align-logo {
+nav .nav-bar .align-logo {
   align-self: flex-start;
 }
-.nav-links {
+nav .nav-bar .nav-links {
   display: flex;
-  color: white;
+  color: #f7f1f1;
 }
-.nav-links a {
+nav .nav-bar .nav-links .link {
+  color: black;
+  text-decoration: underline;
+}
+nav .nav-bar .nav-links a {
   padding: 0px 10px 0px 10px;
   font-size: 20px;
-  color: white;
+  color: #f7f1f1;
   align-self: center;
   text-decoration: none;
 }
+.container {
+  display: flex;
+}
 .hero-image {
-  max-width: 100%;
+  width: 100%;
+}
+.button-1 {
+  width: 130px;
+  height: 45px;
+  color: #f7f1f1;
+  text-align: center;
+  background-color: #fa0808;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 16px;
+  bottom: 12px;
+  border: 1px solid black;
+  box-shadow: 0 4px 4px 0 black;
+}
+.button-1:hover {
+  color: red;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 black;
+  transition: 0.8s;
+  opacity: 0.7;
+}
+.red-box {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  height: 120px;
+  width: 250px;
 }
 .button {
-  color: white;
+  color: #f7f1f1;
   text-align: center;
-  background-color: red;
+  background-color: #fa0808;
   height: 45px;
   width: 130px;
   border-radius: 3px;
@@ -218,59 +255,67 @@ h1 {
   transition: 0.8s;
   opacity: 0.7;
 }
-.red-box {
-  position: absolute;
-  left: 15%;
-  top: 25%;
-  height: 120px;
-  width: 250px;
+h1 {
+  font-size: 35px;
+  color: #f7f1f1;
+  text-shadow: 4px 4px black;
 }
-.container {
-  display: flex;
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 2%;
 }
-.footer-links {
+footer {
+  background-color: #fa0808;
+}
+footer .footer-links,
+footer .copyright {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .footer-links {
   display: flex;
   justify-content: space-between;
 }
-.logo2 {
-  height: 120px;
-}
-.footer-logo {
+footer .footer-links .footer-logo {
   align-self: center;
 }
-.footer-links2 {
-  color: white;
+footer .footer-links .logo2 {
+  height: 120px;
+}
+footer .footer-links .footer-links2 {
+  color: #f7f1f1;
   font-size: 18px;
   padding: 25px 10px;
 }
-.footer-links2 a {
+footer .footer-links .footer-links2 a {
   padding: 10px 5px 0px 5px;
 }
-ul {
+footer .copyright {
+  text-align: center;
+  color: #f7f1f1;
+  padding: 10px;
+  background-color: #080808;
+  opacity: 0.7;
+}
+footer ul {
   display: flex;
 }
-ul li {
+footer ul li {
   width: 50px;
   height: 50px;
   background-image: url(../images/social_medias.png);
   background-position: 0 0;
   list-style-type: none;
 }
-ul li.facebook {
+footer ul li.facebook {
   background-position: 0px 0;
 }
-ul li.google-plus {
+footer ul li.google-plus {
   background-position: -100px 0;
 }
-ul li.instagram {
+footer ul li.instagram {
   background-position: -50px 0;
-}
-.copyright {
-  text-align: center;
-  color: white;
-  padding: 10px;
-  background-color: black;
-  opacity: 0.7;
 }
 @media (max-width: 925px) {
   .container {
